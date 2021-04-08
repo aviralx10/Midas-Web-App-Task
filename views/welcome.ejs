@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MIDAS REGISTER</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/login.css">
+  <script>
+    $(document).ready(function() {
+        $(".fa-search").click(function() {
+            $(".icon").toggleClass("active");
+            $("input[type='text']").toggleClass("active");
+        });
+    });
+</script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+img {
+  border-radius: 3% 12% 3% 12% / 3% 12% 3% 12% ;
+}
+
+.blob{
+  
+  opacity: 0.4;
+  width: 650px;
+  height: 600px;
+  border-radius: 66% 36% 33% 81% / 51% 54% 56% 61%;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 20px; left: 20px;
+  z-index: -99;
+}
+.btn {
+  border: 2px solid black;
+  background-color: purple;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: black;
+  color: white;
+}
+nav .searchbar {
+            position: relative;
+        }
+  
+        /* Styling the search box where the 
+            input would be given */
+        nav .searchbar input[type="text"] {
+            border: 0;
+            padding: 0;
+            width: 0px;
+            height: 35px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+nav .searchbar .icon {
+            display: flex;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 35px;
+            height: 100%;
+            background: none;
+            border-radius: 3px;
+            color: #fff;
+            transition: all 0.5s 0.3s ease;
+        }
+          
+        nav .searchbar .icon i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+          
+        nav .searchbar .icon.active {
+            background: #062333;
+            transition: all 0.3s ease;
+        }
+          
+        nav .searchbar input[type="text"].active {
+            width: 250px;
+            padding: 0 10px;
+            transition: all 0.5s 0.2s ease;
+        }
+
+
+
+
+
+
+</style>
+
+<!-- Navbar-->
+<header class="header">
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/images/icon.png" width="20" height="20" class="d-inline-block align-top " style="font-weight: bold; font-size: 40px;" alt="">
+    </a>
+    <div class="container"><a href="#" class="navbar-brand font-weight-bold" style="position:fixed;left:50px;font-size: 20px;">Midas IIITD</a>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown" style="padding-left: 5;padding-right: 5;">
+                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Home
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown" style="padding-left: 5;padding-right: 5;">
+                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Pages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown" style="padding-left: 5;padding-right: 5;">
+                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown" style="padding-left: 5;padding-right: 5;">
+                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Blog
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link font-weight-bold" style="padding-left: 10;">Contact</a></li>
+                  <li class="nav-item" style="position: fixed;right:100px;top:15px;">
+                    <div class="searchbar" >
+                      <input type="text" placeholder="search">
+                      <div class="icon">
+                          <i class="fas fa-search"></i>
+                      </div>
+                  </div>
+                  </li>
+                  <li class="nav-item" style="position: fixed;right:50px;top:34px;">
+                    <div class="searchbar" >
+                      <div class="icon">
+                          <i class="fas fa-bars"></i>
+                      </div>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+  </nav>
+</header>
+
+      
+ 
+<body>
+  <div class="blob" style="position:fixed; left:700px;top:150px; z-index: 1;"></div>
+  <h1 style="position:fixed; left:900px;top:150px;font-weight:900; z-index: 2;font-size:80px;color: white;">MIDAS</h1>
+  <br>
+  <h1 style="position:fixed; left:850px;top:240px;font-weight:900; z-index: 2;font-size:80px;color: white;">WEB TASK</h1>
+  <h1 style="position:fixed; left:850px;top:350px;font-weight:normal; z-index: 2;font-size:30px;color: white;text-align: center;">This project was fun to do <br>  Made by Aviral Yadav</h1>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="width:700px;height:600px;position:fixed; left:600px; top:700px " >
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style=" left:200px; top:130px;width:600px;height:600px;top:30px">
+      <div class="item active">
+        <img src="/assets/images/m1.png" >
+      </div>
+  
+      <div class="item">
+        <img src="/assets/images/m2.png" >
+      </div>
+  
+      <div class="item">
+        <img src="/assets/images/m3.png" >
+      </div>
+    </div>
+  </div>
+  
+  <a href="/users/login" class="btn info" role="button" style="position:fixed; left:850px; top:500px;font-weight: bold; z-index: +2;">LOGIN | SIGNUP</a>
+  <a href="https://www.youtube.com/channel/UCPgCZNqUo3aaIfwtvXinAXw" class="btn info" role="button" style="position:fixed; left:1050px; top:500px;font-weight: bold;z-index: +2;"> YOUTUBE <i class="fab fa-youtube"></i></i></a>
+</body>
+</html>
+
