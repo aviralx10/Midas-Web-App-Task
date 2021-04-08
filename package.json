@@ -12,6 +12,9 @@
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
+  "engines": {
+    "node": "10.16.0"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-flash": "^0.1.1",
