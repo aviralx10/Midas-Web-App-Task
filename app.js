@@ -40,4 +40,5 @@ app.use((req,res,next)=> {
 app.use('/',require('./routes/index'));
 app.use('/users',require('./routes/users'));
 
-app.listen(3000); 
+var port_number = app.listen(process.env.PORT || 3000);
+app.listen(port_number);
