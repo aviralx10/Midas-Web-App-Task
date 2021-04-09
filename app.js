@@ -10,7 +10,8 @@ const passport = require("passport");
 //passport config:
 require('./config/passport')(passport);
 //mongoose
-mongoose.connect('mongodb://localhost/test',{useNewUrlParser: true, useUnifiedTopology : true})
+const url = "mongodb+srv://aviralx10:aviralx10@cluster0.cyqz4.mongodb.net/User?retryWrites=true&w=majority";
+mongoose.connect(url || 'mongodb://localhost/test',{useNewUrlParser: true, useUnifiedTopology : true})
 .then(() => console.log('connected :)'))
 .catch((err)=> console.log(err));
 
