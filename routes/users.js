@@ -6,25 +6,25 @@ const passport = require('passport');
 //login handle
 router.get('/login',(req,res)=>{
     res.render('login');
-})
+});
 router.get('/register',(req,res)=>{
-    res.render('register')
-    })
+    res.render('register');
+    });
 //Register handle
 router.post('/login',(req,res,next)=>{
 passport.authenticate('local',{
     successRedirect : '/dashboard',
     failureRedirect: '/users/login',
     failureFlash : true
-})(req,res,next)
-})
+})(req,res,next);
+});
   //register post handle
   router.post('/register',(req,res)=>{
     const {name,email, password, password2} = req.body;
     let errors = [];
     console.log(' Name ' + name+ ' email :' + email+ ' pass:' + password);
     if(!name || !email || !password || !password2) {
-        errors.push({msg : "Please fill in all fields"})
+        errors.push({msg : "Please fill in all fields"});
     }
     //check if match
     if(password !== password2) {
@@ -33,7 +33,7 @@ passport.authenticate('local',{
     
     //check if password is more than 6 characters
     if(password.length < 6 ) {
-        errors.push({msg : 'Password should contain atleast 6 characters'})
+        errors.push({msg : 'Password should contain atleast 6 characters'});
     }
     if(errors.length > 0 ) {
     res.render('register', {
@@ -41,14 +41,14 @@ passport.authenticate('local',{
         name : name,
         email : email,
         password : password,
-        password2 : password2})
+        password2 : password2});
      } else {
         //validation passed
        User.findOne({email : email}).exec((err,user)=>{
         console.log(user);   
         if(user) {
             errors.push({msg: 'Uh oh! this email is already registered'});
-            res.render('register',{errors,name,email,password,password2})  
+            res.render('register',{errors,name,email,password,password2}) ; 
            } else {
             const newUser = new User({
                 name : name,
@@ -66,7 +66,7 @@ passport.authenticate('local',{
                     //save user
                     newUser.save()
                     .then((value)=>{
-                        console.log(value)
+                        console.log(value);
                         req.flash('success_msg','You are now registered successfully!');
                         res.redirect('/users/login');
                     })
@@ -74,13 +74,13 @@ passport.authenticate('local',{
                       
                 }));
              }
-       })
+       });
     }
-    })
+    });
 //logout
 router.get('/logout',(req,res)=>{
 req.logout();
 req.flash('success_msg','Logged out! Have a great day :)');
 res.redirect('/users/login'); 
-})
+});
 module.exports  = router;
