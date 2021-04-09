@@ -16,7 +16,7 @@
 
 </head>
 <style>
-   .fa {
+.fa {
     padding: 20px;
   font-size: 30px;
   width: 70px;
@@ -82,49 +82,33 @@ hr.new4 {
             text-align: center;
             font-size: 18px;
           }
+.box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            min-height: 400px;
+            align-items: center;
+}
 </style>
 <body>
-        <div style = "position:fixed; left:520px; top:200px" >
-            <h1 style="color:white"> Welcome <%= user.name %> !</h1>  
-            <br>
-            <br>
-            <br>
+        <div class="box" >
+            <h1 style="color:white;"> Welcome <%= user.name %> !</h1>  
             <h3 style="color:white"> 
-                This project is made by Aviral Yadav.<br>
-                Hope you enjoyed it as much as I did!
-                <br>
+                Looking forward to hear from you soon :)  
             </h3>
-            <h3 style="position:relative; left:100px; top:5px;color:white"> 
-                Have a Great Day!
-                <br>
-            </h3>
-            <br>
-            <h3 style="position:relative; left:-20px; top:5px;color:white"> 
-                Looking forward to hear from you soon :)
-                <br>
-                
-            </h3>
-            <div style="position:relative; left:100px; top:5px;color:white"> 
+            <div> 
                 <a href="https://www.linkedin.com/in/aviral-yadav/" class="fa fa-linkedin"></a> 
                 <a href="https://github.com/aviralx10" class="fa fa-github"></a> 
                 <a href="mailto:aviralx10@gmail.com" class="fa fa-google"></a> 
             </div>
-
-            
-            
-            
         </div>
-        
-
+        <div class="topright">
+          <a href="/users/logout">Logout</a>
+        </div>
     
-    <div class="topright">
-        <a href="/users/logout">Logout</a>
-    </div>
-    
-    <div class="ball"></div>
-    
-    
-        
     
 </body>
 </html>
