@@ -43,4 +43,10 @@ This is a simple web app for the Engineering Track Task for Midas IIITD.
 
 
 ## 😄 Gratitude
-I want to thank the Midas IIITD team for giving me this opportunity and providing me with a task that helped me to challenge myself and get out of my comfort zone.  
+I want to thank the Midas IIITD team for giving me this opportunity and providing me with a task that helped me to challenge myself and get out of my comfort zone. 
+
+## References
+- [w3schools](https://www.w3schools.com)
+- [Official Bootstrap Website](https://getbootstrap.com)
+- [Stack OVerflow](https://stackoverflow.com)
+
