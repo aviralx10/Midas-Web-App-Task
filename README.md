@@ -16,9 +16,9 @@ This is a simple web app for the Engineering Track Task for Midas IIITD.
     - INTUITION : Although the use of MySQL and MongoDB would not have impacted much here , I used MongoDB to get a tad better speed and performance due to the key pair logic for the faster retrieval of the data.
 
 ## 💻 Run the project locally
-- Clone the repo ``````
-- Navigate to ```SocioMark/backend```
-- Run command to install all the JavaScript (Client) dependencies ```npm install``` 
+- Clone the repo ```https://github.com/aviralx10/Midas-Web-App-Task.git```
+- Navigate to the app using terminal.
+- Run command to install all the dependencies ```npm install``` 
 - Run command to start the server ```node app.js```
 - Navigate to ```http://localhost:3000/```
 
