@@ -7,6 +7,7 @@ This is a simple web app for the Engineering Track Task for Midas IIITD.
 - Custom Authentication with special tags for incorrect credentials, and incomplete fields
 - Successfully deployed on Heroku [App Link](https://midas-web-task-aviral.herokuapp.com/)
 
+
 ## ⚛ Tech Stack
 - Frontend : HTML(EJS), CSS, Bootstrap  
     - INTUITION : EJS would have allowed me to use Javascript within my HTML code which would help me do animations and do toggling of buttons with ease.
@@ -25,6 +26,11 @@ This is a simple web app for the Engineering Track Task for Midas IIITD.
 ## :frowning_face:Problems Encountered
 - One of the main challenges was to implement the shape of the blob as shown in the Design File. I had to scan through various resources and go through a lot of effort in order to make the blob.
 - While deploying to heroku, I encountered various issues with my authorisation as Heroku had discontunued the addon for MongoDB, I had to connect MongoDB Atlas with my server and had to do some changes for the same.
+
+## Screenshots
+### Main Home Screen
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/40929234/114276142-0908f380-9a43-11eb-956a-aa4f1033c71a.png">
+
 
 ## 😄 Gratitude
 I want to thank the Midas IIITD team for giving me this opportunity and providing me with a task that helped me to challenge myself and get out of my comfort zone.  
