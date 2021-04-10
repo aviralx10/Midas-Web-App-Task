@@ -6,7 +6,8 @@ This is a simple web app for the Engineering Track Task for Midas IIITD.
 - A State of the Art Web Design 
 - Custom Authentication with special tags for incorrect credentials, and incomplete fields
 - Successfully deployed on Heroku [App Link](https://midas-web-task-aviral.herokuapp.com/)
-
+- Fully Responsive for large and medium screens.
+- NOTE TO THE REVIEWER - I am assuming the given website design was for large and medium screens as the given design was not possible to implement on small screens.
 
 ## ⚛ Tech Stack
 - Frontend : HTML(EJS), CSS, Bootstrap  
