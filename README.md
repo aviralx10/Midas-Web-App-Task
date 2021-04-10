@@ -31,6 +31,15 @@ This is a simple web app for the Engineering Track Task for Midas IIITD.
 ### Main Home Screen
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/40929234/114276142-0908f380-9a43-11eb-956a-aa4f1033c71a.png">
 
+### Login Screen
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/40929234/114276418-2094ac00-9a44-11eb-895a-89de9544f688.png">
+
+### Registration Screen
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/40929234/114276443-32764f00-9a44-11eb-848e-f639aeca4ce4.png">
+
+### User Dashboard Screen
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/40929234/114276454-402bd480-9a44-11eb-8d51-546f91f24b38.png">
+
 
 ## 😄 Gratitude
 I want to thank the Midas IIITD team for giving me this opportunity and providing me with a task that helped me to challenge myself and get out of my comfort zone.  
