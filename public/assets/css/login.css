@@ -1,7 +1,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(68,0,56,1) 100%, rgba(0,212,255,1) 100%);
+  background: rgb(161,102,198);
+background: radial-gradient(circle, rgba(161,102,198,1) 21%, rgba(16,6,52,1) 51%);
   min-height: 100vh; }
 
 .brand-wrapper {
